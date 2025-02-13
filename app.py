@@ -6,7 +6,7 @@ import shelve
 
 load_dotenv()
 
-st.title("Bienvenido")
+st.title("Bienvenido, ¿En qué puedo ayudarte hoy?")
 
 USER_AVATAR = "👤"
 BOT_AVATAR = "🤖"
@@ -35,8 +35,10 @@ if "messages" not in st.session_state:
 
 # Sidebar with a button to delete chat history
 with st.sidebar:
+    
     if st.button("Borrar el historial"):
         st.session_state.messages = []
+        
         save_chat_history([])
 
 # Display chat messages
