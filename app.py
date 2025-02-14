@@ -1,10 +1,8 @@
 from openai import OpenAI
 import streamlit as st
-from dotenv import load_dotenv
 import os
 import shelve
 
-load_dotenv()
 
 st.title("Bienvenido, ¿En qué puedo ayudarte hoy?")
 
